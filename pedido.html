@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>Finalizar Pedido — Forno & Braza</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <h1>Monte seu pedido</h1>
+            <p>Escolha sua pizza e complete o pedido</p>
+            <div class="divisor-espeto"></div>
+        </header>
+        <nav class="menu-site">
+            <a href="index.html">Início</a>
+            <a href="cardapio.html">Fazer Pedido</a>
+            <a href="meus-pedidos.html">Meus Pedidos</a>
+            <a href="login.html">Entrar / Minha Conta</a>
+            <a href="admin.html" id="linkAdmin" hidden>Painel Admin</a>
+        </nav>
+        <main>
+            <section>
+                <h2>Pizza</h2>
+                <div class="linha-campos">
+                    <div class="campo">
+                        <label>Quantidade de fatias</label>
+                        <select id="fatias"><option>4</option>
+                            <option selected>8</option>
+                            <option>12</option>
+                        </select>
+                    </div>
+                    <div class="campo">
+                        <label>Primeiro sabor</label>
+                        <select id="sabor1" required>
+
+                        </select>
+                    </div>
+                    <div class="campo">
+                        <label>Segundo sabor (opcional)</label>
+                        <select id="sabor2">
+                            <option value="">Não quero</option>
+                        </select>
+                    </div>
+                </div>
+                <h2>Bebidas</h2>
+                <div id="listaBebidas" class="prato-grid"></div>
+                <div class="campo">
+                    <label>Observações (ex.: sem cebola)</label>
+                    <textarea id="observacao" maxlength="500"></textarea>
+                </div>
+            </section>
+            <section>
+                <h2>Entrega e pagamento</h2>
+                <div class="campo">
+                    <label>Como deseja receber?</label>
+                    <select id="tipoEntrega">
+                        <option value="Retirada">Retirada no Balcão — grátis</option>
+                        <option value="Entrega">Entrega em Casa</option>
+                    </select>
+                </div>
+                <div class="campo">
+                    <label>Forma de pagamento</label>
+                    <select id="pagamento">
+                        <option>PIX</option>
+                        <option>Cartão</option>
+                        <option>Dinheiro</option>
+                    </select>
+                </div>
+                <p id="resumoTaxa"></p>
+                <button id="confirmarPedido">Confirmar pedido</button>
+                <p id="pedidoMsg" class="mensagem"></p>
+            </section>
+        </main>
+        <script src="script.js">
+
+        </script>
+        </body>
+        </html>

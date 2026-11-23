@@ -1,0 +1,13 @@
+ADMINISTRADOR 
+E-mail: fornoebraza@gmail.com
+Senha: 1234
+
+Clientes
+E-mail:alexandro@gmail.com
+Senha: 2345
+
+E-mail: celia@gmail.com
+Senha:3456
+
+E-mail:thiago@gmail.com
+Senha:4567
